@@ -5,16 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>War@Github</title>
+    <style> 
+        .user1, .user2 {
+            margin: 10px;
+            padding: 20px;
+        }   
+        .btn-1, .btn-2 {
+            margin: 5px;
+            padding: 5px;
+        }
+        .users, .battle-btn {
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .battle-btn{
+            display: none;
+        } */
+        img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .winner {
+            border: 5px solid #052456;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="home">
             <h1>Github War Zone</h1>
             <h3>BattleHub is waiting for you...</h3>
-            <button>Enter The Arena</button>
+            <button class='arena-btn'>Enter The Arena</button>
         </div>
+        <div class='users'>
+            <div class='user1'>
+                <h3>Player-1</h3>
+                <form>
+                    <input type="text">
+                    <button class="btn-1">Ready!</button>
+                </form>
+            </div>
+            <div class='user2'>
+                <h3>Player-2</h3>
+                <form>
+                    <input type="text">
+                    <button class='btn-2'>Ready!</button>
+                </form>
+            </div>
+        </div>
+        <div class='battle-btn'>
+            <button>Start Battle</button>
+        </div>
+
     </div>
 
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
